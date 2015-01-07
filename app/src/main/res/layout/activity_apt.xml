@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="th.jack.jirawuts.miniapartment.AptActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtName"
+                android:textSize="@dimen/edtTextSize"
+                android:hint="@string/strAptName"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="97dp"
+                android:ems="10"
+                android:id="@+id/edtAddress"
+                android:hint="@string/strAddress"
+                android:lines="3"
+                android:inputType="text"
+                android:gravity="top"
+                android:textSize="@dimen/edtTextSize"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/edtPhone"
+                android:hint="@string/strPhone"
+                android:textSize="@dimen/edtTextSize"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strElecRate"
+                    android:id="@+id/textView"
+                    android:layout_weight="1.25"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtElecRate"
+                    android:hint="@string/strRate"
+                    android:textSize="@dimen/edtTextSize"
+                    android:layout_weight="1.75"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strWaterRate"
+                    android:id="@+id/textView2"
+                    android:layout_weight="1.25"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtWaterRate"
+                    android:hint="@string/strRate"
+                    android:textSize="@dimen/edtTextSize"
+                    android:layout_weight="1.75"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strElecMin"
+                    android:id="@+id/textView3"
+                    android:layout_weight="1.25"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtElecMin"
+                    android:layout_weight="1.75"
+                    android:hint="@string/strAmt"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strWaterMin"
+                    android:id="@+id/textView4"
+                    android:layout_weight="1.25"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtWaterMin"
+                    android:layout_weight="1.75"
+                    android:hint="@string/strAmt"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnSave"
+                    android:onClick="saveApt"
+                    android:id="@+id/btnSave"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/btnTextSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

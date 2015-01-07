@@ -1,0 +1,291 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="th.jack.jirawuts.miniapartment.RoomDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="@string/strRoomNo"
+                    android:id="@+id/textView5"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/edtTextSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/edtNo"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/edtTextSize"
+                    android:textStyle="bold"
+                    android:editable="false"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/edtFname"
+                android:hint="@string/strFname" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/edtLname"
+                android:hint="@string/strLname" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/edtPhone"
+                android:hint="@string/strPhone" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/edtDate"
+                android:hint="@string/strDate" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="0">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strRental"
+                    android:id="@+id/txtRental"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtRental"
+                    android:hint="@string/strAmtMonth"
+                    android:textSize="@dimen/edtTextSize"
+                    android:layout_weight="1"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strInternet"
+                    android:id="@+id/txtInternet"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtInternet"
+                    android:hint="@string/strAmtMonth"
+                    android:textSize="@dimen/edtTextSize"
+                    android:layout_weight="1"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strElecRate"
+                    android:id="@+id/txtErate"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtElecRate"
+                    android:hint="@string/strRate"
+                    android:textSize="@dimen/edtTextSize"
+                    android:layout_weight="1"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strWaterRate"
+                    android:id="@+id/txtWaterRate"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/edtWaterRate"
+                    android:hint="@string/strRate"
+                    android:textSize="@dimen/edtTextSize"
+                    android:layout_weight="1"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strElecMin"
+                    android:id="@+id/txtElecMin"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtElecMin"
+                    android:layout_weight="1"
+                    android:hint="@string/strAmt"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strWaterMin"
+                    android:id="@+id/txtWaterMin"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtWaterMin"
+                    android:layout_weight="1"
+                    android:hint="@string/strAmt"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strEmeterStart"
+                    android:id="@+id/txtEmeterStart"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtEmeterStart"
+                    android:layout_weight="1"
+                    android:hint="@string/strUnit"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strWmeterStart"
+                    android:id="@+id/txtWmeterStart"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/txtSize"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtWmeterStart"
+                    android:layout_weight="1"
+                    android:hint="@string/strUnit"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnSave"
+                    android:onClick="saveRoom"
+                    android:id="@+id/btnSave"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/btnTextSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

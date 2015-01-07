@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="th.jack.jirawuts.miniapartment" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AptActivity"
+            android:label="แก้ไขข้อมูลอพาร์ทเม้นท์"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".RoomActivity"
+            android:label="แก้ไขข้อมูลห้องพัก"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".RoomDetailActivity"
+            android:label="รายละเอียดห้องพัก"
+            android:parentActivityName=".RoomActivity" >
+        </activity>
+        <activity
+            android:name=".MeterActivity"
+            android:label="จดมิเตอร์น้ำ-ไฟประจำเดือน"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".RentalPrintActivity"
+            android:label="@string/title_activity_rental_print" >
+        </activity>
+    </application>
+
+</manifest>

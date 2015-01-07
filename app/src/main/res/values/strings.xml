@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">miniAPT</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="strMeter">จดมิเตอร์น้ำ-ไฟ</string>
+    <string name="strPrint">พิมพ์ใบค่าเช่า</string>
+    <string name="strReport">รายงาน</string>
+    <string name="strApt">แก้ไขข้อมูลอพาร์ทเม้นท์</string>
+    <string name="strRoom">แก้ไขข้อมูลห้องพัก</string>
+    <string name="title_activity_apt">AptActivity</string>
+    <string name="strAptName">ชื่ออพาร์ทเม้นท์ :</string>
+    <string name="strAddress">ที่อยู่ :</string>
+    <string name="strPhone">เบอร์โทรศัพท์ :</string>
+    <string name="strElecRate">อัตราค่าไฟ :</string>
+    <string name="strWaterRate">อัตราค่าน้ำ :</string>
+    <string name="strRate">(บาท/ยูนิต)</string>
+    <string name="strElecMin">ค่าไฟขั้นต่ำ :</string>
+    <string name="strWaterMin">ค่าน้ำขั้นต่ำ :</string>
+    <string name="strAmt">(บาท)</string>
+    <string name="strAmtMonth">(บาท/เดือน)</string>
+    <string name="btnSave">บันทึก</string>
+    <string name="btnCancel">กลับ</string>
+    <string name="title_activity_room">RoomActivity</string>
+    <string name="btnNewRoom">เพิ่มห้องใหม่</string>
+    <string name="title_activity_room_detail">RoomDetailActivity</string>
+    <string name="strRoomNo">เลขที่ห้อง :</string>
+    <string name="strFname">ชื่อ :</string>
+    <string name="strLname">นามสกุล :</string>
+    <string name="strDate">วันที่เข้าอยู่(วัน/เดือน/ปี) :</string>
+    <string name="strEmeterStart">มิเตอร์ไฟเริ่มต้น :</string>
+    <string name="strUnit">(ยูนิต)</string>
+    <string name="strWmeterStart">มิเตอร์น้ำเริ่มต้น :</string>
+    <string name="strRental">ค่าเช่า :</string>
+    <string name="strInternet">ค่า Internet :</string>
+    <string name="strElecMeter">มิเตอร์ไฟ :</string>
+    <string name="strWaterMeter">มิเตอร์น้ำ :</string>
+    <string name="strPhoneAmt">ค่าโทรศัพท์ :</string>
+    <string name="strOtherAmt">ค่าบริการอื่นๆ :</string>
+    <string name="title_activity_rental_print">RentalPrintActivity</string>
+    <string name="strAllRoom">สั่งพิมพ์ทุกห้อง</string>
+    <string name="strRoomFrom">ตั้งแต่ห้องที่ :</string>
+    <string name="strRoomTo">ถึง :</string>
+    <string name="btnPrint">สั่งพิมพ์</string>
+
+</resources>
